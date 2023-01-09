@@ -5,8 +5,8 @@ services:
 
 
 before_install:
-  - docker build -t EdoardoRagazzi/docker-react -f Dockerfile.dev .
+  - docker build -t edoardoragazzi/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true EdoardoRagazzi/docker-react npm run test -- --coverage
+  - docker run -e CI=true edoardoragazzi/docker-react npm run test -- --coverage
   
